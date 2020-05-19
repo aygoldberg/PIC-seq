@@ -1,0 +1,10 @@
+group	gene	color	priority	T_fold
+Anti-viral	NA	#10AC83	NA	NA
+naive	NA	#B0C399	NA	NA
+act	NA	#078036	NA	NA
+Cycling	NA	#25431D	NA	NA
+Tnf	NA	#54AF32	NA	NA
+3h	NA	#ED6978	NA	NA
+Cst3	NA	#ED6D1C	NA	NA
+mono	NA	#E52520	NA	NA
+coc	NA	#B31B1D	NA	NA

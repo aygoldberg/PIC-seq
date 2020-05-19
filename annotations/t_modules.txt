@@ -1,0 +1,150 @@
+	annotation	umicount
+B2m	Th precursor	37975
+H2-K1	Th precursor	11839
+Ly6e	Th precursor	7639
+Tmsb10	Th precursor	7499
+Shisa5	Th precursor	6168
+Smc4	Th precursor	4533
+Ms4a4b	Th precursor	4458
+Gimap4	Th precursor	4065
+Gimap6	Th precursor	3614
+Ifi27l2a	Th precursor	3410
+Fxyd5	Th precursor	3359
+Gimap3	Th precursor	3150
+Pnrc1	Th precursor	2763
+Dgka	Th precursor	2248
+Sell	Th precursor	2125
+Samhd1	Th precursor	1953
+Gimap9	Th precursor	1918
+Saraf	Th precursor	1913
+Crip1	Th precursor	1868
+Klf2	Th precursor	1438
+Selenop	Th precursor	1303
+2810474O19Rik	Th precursor	1177
+S1pr1	Th precursor	1167
+Ifngr1	Th precursor	1164
+Rflnb	Th precursor	721
+Kif21b	Th precursor	610
+Stat1	Type I IFN	3848
+Gbp2	Type I IFN	2795
+Ifi47	Type I IFN	2309
+Irgm1	Type I IFN	1024
+Dtx3l	Type I IFN	779
+Gbp4	Type I IFN	665
+Parp14	Type I IFN	641
+Gbp7	Type I IFN	587
+Iigp1	Type I IFN	517
+Isg15	Type I IFN	501
+Ifi206	Type I IFN	469
+Slfn8	Type I IFN	396
+Ifit1	Type I IFN	389
+Slfn5	Type I IFN	374
+Cxcl10	Type I IFN	353
+Rnf213	Type I IFN	335
+Ifi208	Type I IFN	290
+Rtp4	Type I IFN	275
+Isg20	Type I IFN	228
+Gbp3	Type I IFN	223
+Irf7	Type I IFN	221
+Gbp8	Type I IFN	205
+Ifit3	Type I IFN	182
+Usp18	Type I IFN	178
+Oasl2	Type I IFN	134
+Parp12	Type I IFN	88
+Rsad2	Type I IFN	84
+Hsp90ab1	Activation	47314
+AC117232.5	Activation	42037
+Npm1	Activation	41210
+Snord14d	Activation	19603
+Serbp1	Activation	17798
+Mif	Activation	14833
+Snora75	Activation	14777
+Txn1	Activation	13521
+Ncl	Activation	13191
+Ybx1	Activation	12983
+Atp5b	Activation	12214
+Pkm	Activation	11447
+Hnrnpab	Activation	11032
+Chchd2	Activation	10218
+Hspe1	Activation	10210
+Hsp90aa1	Activation	10083
+Ran	Activation	9933
+Eif5a	Activation	8611
+Eif3c	Activation	7519
+Cct2	Activation	7300
+Hspd1	Activation	6473
+Nme1	Activation	6305
+Nop58	Activation	6290
+Cct6a	Activation	6288
+Snora20	Activation	6145
+Cct7	Activation	5988
+Ddx21	Activation	5552
+Hdgf	Activation	5449
+Ranbp1	Activation	5250
+Cct8	Activation	5186
+Srm	Activation	5103
+Pa2g4	Activation	4893
+Srsf3	Activation	4767
+Cct4	Activation	4621
+C1qbp	Activation	4511
+Banf1	Activation	4387
+Nhp2	Activation	4287
+Hspa9	Activation	4203
+Srsf2	Activation	3951
+Ybx3	Activation	3903
+Mybbp1a	Activation	3887
+Eif4a1	Activation	3836
+Nolc1	Activation	3537
+Esd	Activation	3116
+Ebna1bp2	Activation	3043
+Snord82	Activation	2940
+Lyar	Activation	2853
+Wdr43	Activation	2621
+Ppid	Activation	2541
+AC117232.1	Activation	1863
+Gart	Activation	1486
+Zfp827	Activation	91
+Srgn	Early activation	9185
+Hspa5	Early activation	6677
+Myc	Early activation	3452
+Nfkb1	Early activation	3386
+Gadd45b	Early activation	3314
+Irf4	Early activation	2773
+Dusp5	Early activation	2608
+Dusp2	Early activation	2205
+Cd40lg	Early activation	1159
+Tagap	Early activation	881
+Kdm6b	Early activation	791
+Vsir	Early activation	673
+Tnf	Early activation	646
+Slc41a1	Early activation	460
+Slamf1	Early activation	443
+Arl5b	Early activation	230
+Nr4a2	Early activation	213
+Gch1	Early activation	187
+Atf3	Early activation	164
+Rrad	Early activation	162
+Dut	Proliferation	2591
+Hist1h2ao	Proliferation	1561
+Scd2	Proliferation	1399
+Top2a	Proliferation	1370
+Rrm2	Proliferation	1249
+Ube2c	Proliferation	668
+Ccna2	Proliferation	600
+Mki67	Proliferation	587
+Cdk1	Proliferation	583
+Birc5	Proliferation	521
+Tpx2	Proliferation	348
+Tcf19	Proliferation	307
+Cdca8	Proliferation	301
+Kif11	Proliferation	278
+Ncapg2	Proliferation	269
+Cdc6	Proliferation	257
+Fignl1	Proliferation	234
+Aurkb	Proliferation	226
+Cenpm	Proliferation	224
+Ncapg	Proliferation	217
+Cenpk	Proliferation	199
+Pbk	Proliferation	158
+Bub1	Proliferation	147
+Gen1	Proliferation	124

@@ -1,0 +1,95 @@
+Amp.Batch.ID	Seq.Batch.ID	Batch.Set.ID	Description	tissue	date	treatment	sorting.scheme	mouse	dilution	timepoint	replicate	notes	sorting.batch	sorting.plate	empty.wells
+AB6032	SB304	CD4_Co-culture_doublets	CD4_Co-culture_doublets_1	in vitro	20181111	OVA + LPS	doublets			20h	NA	NA	NA	NA	NA
+AB6033	SB304	CD4_Co-culture_doublets	CD4_Co-culture_doublets_2	in vitro	20181111	OVA + LPS	doublets			20h	NA	NA	NA	NA	NA
+AB6034	SB304	CD4_Co-culture_T_only	CD4_Co-culture_T_only	in vitro	20181111	OVA + LPS	Trbc+			20h	NA	NA	NA	NA	NA
+AB6035	SB304	CD4_Co-culture_DC_only	CD4_Co-culture_DC_only_1	in vitro	20181111	OVA + LPS	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6036	SB304	CD4_Co-culture_DC_only	CD4_Co-culture_DC_only_2	in vitro	20181111	OVA + LPS	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6037	SB304	DC_mono-culture_DC_only	DC_mono-culture_DC_only_1	in vitro	20181111	OVA + LPS DC only	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6038	SB304	DC_mono-culture_DC_only	DC_mono-culture_DC_only_2	in vitro	20181111	OVA + LPS DC only	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6039	SB304	T_mono-culture_T_only	T_mono-culture_T_only_1	in vitro	20181111	OVA + LPS T only	Trbc+			20h	NA	NA	NA	NA	NA
+AB6040	SB304	T_mono-culture_T_only	T_mono-culture_T_only_2	in vitro	20181111	OVA + LPS T only	Trbc+			20h	NA	NA	NA	NA	NA
+AB6041	SB304	Transwell_DC_down	Transwell_DC_down_1	in vitro	20181111	OVA + LPS transwell	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6042	SB304	Transwell_DC_up	Transwell_DC_up	in vitro	20181111	OVA + LPS transwell	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6043	SB304	Transwell_T_down	Transwell_T_down_1	in vitro	20181111	OVA + LPS transwell	Trbc+			20h	NA	NA	NA	NA	NA
+AB6044	SB304	Transwell_T_down	Transwell_T_down_2	in vitro	20181111	OVA + LPS transwell	Trbc+			20h	NA	NA	NA	NA	NA
+AB6045	SB304	Transwell_DC_down	Transwell_DC_down_2	in vitro	20181111	OVA + LPS transwell	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6046	SB304	Transwell_T_up	Transwell_T_up	in vitro	20181111	OVA + LPS transwell	Trbc+			20h	NA	NA	NA	NA	NA
+AB6192	SB309	CD4_Co-culture_3h_doublets	CD4_Co-culture_3h_doublets_1	in vitro	20181211	OVA + LPS	doublets			3h	NA	NA	NA	NA	NA
+AB6193	SB309	CD4_Co-culture_3h_doublets	CD4_Co-culture_3h_doublets_2	in vitro	20181211	OVA + LPS	doublets			3h	NA	NA	NA	NA	NA
+AB6194	SB309	CD4_Co-culture_3h_DC	CD4_Co-culture_3h_DC_1	in vitro	20181211	OVA + LPS	Cd11c+			3h	NA	NA	NA	NA	NA
+AB6195	SB309	CD4_Co-culture_3h_DC	CD4_Co-culture_3h_DC_2	in vitro	20181211	OVA + LPS	Cd11c+			3h	NA	NA	NA	NA	NA
+AB6196	SB309	CD4_Co-culture_3h_T	CD4_Co-culture_3h_T	in vitro	20181211	OVA + LPS	Trbc+			3h	NA	NA	NA	NA	NA
+AB6197	SB309	mono-culture_3h_DC	mono-culture_3h_DC_1	in vitro	20181211	OVA + LPS DC only	Cd11c+			3h	NA	NA	NA	NA	NA
+AB6198	SB309	mono-culture_3h_DC	mono-culture_3h_DC_2	in vitro	20181211	OVA + LPS DC only	Cd11c+			3h	NA	NA	NA	NA	NA
+AB6199	SB309	mono-culture_3h_T	mono-culture_3h_T_1	in vitro	20181211	OVA + LPS T only	Trbc+			3h	NA	NA	NA	NA	NA
+AB6200	SB309	mono-culture_3h_T	mono-culture_3h_T_2	in vitro	20181211	OVA + LPS T only	Trbc+			3h	NA	NA	NA	NA	NA
+AB6201	SB309	CD4_Co-culture_20h_doublets	CD4_Co-culture_20h_doublets_1	in vitro	20181211	OVA + LPS	doublets			20h	NA	NA	NA	NA	NA
+AB6202	SB309	CD4_Co-culture_20h_doublets	CD4_Co-culture_20h_doublets_2	in vitro	20181211	OVA + LPS	doublets			20h	NA	NA	NA	NA	NA
+AB6203	SB309	CD4_Co-culture_20h_DC	CD4_Co-culture_20h_DC_1	in vitro	20181211	OVA + LPS	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6204	SB309	CD4_Co-culture_20h_DC	CD4_Co-culture_20h_DC_2	in vitro	20181211	OVA + LPS	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6205	SB309	CD4_Co-culture_20h_doublets	CD4_Co-culture_20h_doublets_3	in vitro	20181211	OVA + LPS	doublets			20h	NA	NA	NA	NA	NA
+AB6206	SB309	CD4_Co-culture_20h_doublets	CD4_Co-culture_20h_doublets_4	in vitro	20181211	OVA + LPS	doublets			20h	NA	NA	NA	NA	NA
+AB6207	SB309	CD4_Co-culture_20h_DC	CD4_Co-culture_20h_DC_3	in vitro	20181211	OVA + LPS	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6208	SB309	CD4_Co-culture_20h_T	CD4_Co-culture_20h_T_1	in vitro	20181211	OVA + LPS	Trbc+			20h	NA	NA	NA	NA	NA
+AB6209	SB309	CD4_Co-culture_20h_T	CD4_Co-culture_20h_T_2	in vitro	20181211	OVA + LPS	Trbc+			20h	NA	NA	NA	NA	NA
+AB6210	SB309	CD4_Co-culture_20h_T	CD4_Co-culture_20h_T_3	in vitro	20181211	OVA + LPS	Trbc+			20h	NA	NA	NA	NA	NA
+AB6211	SB309	mono-culture_20h_T	mono-culture_20h_T_2	in vitro	20181211	OVA + LPS T only	Trbc+			20h	NA	NA	NA	NA	NA
+AB6212	SB309	mono-culture_20h_DC	mono-culture_20h_DC_1	in vitro	20181211	OVA + LPS DC only	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6213	SB309	mono-culture_20h_DC	mono-culture_20h_DC_2	in vitro	20181211	OVA + LPS DC only	Cd11c+			20h	NA	NA	NA	NA	NA
+AB6214	SB309	CD4_Co-culture_20h_T	CD4_Co-culture_20h_T_4	in vitro	20181211	OVA + LPS	Trbc+			20h	NA	NA	NA	NA	NA
+AB6215	SB309	CD4_Co-culture_48h_doublets	CD4_Co-culture_48h_doublets_1	in vitro	20181211	OVA + LPS	doublets			48h	NA	NA	NA	NA	NA
+AB6216	SB309	CD4_Co-culture_48h_doublets	CD4_Co-culture_48h_doublets_2	in vitro	20181211	OVA + LPS	doublets			48h	NA	NA	NA	NA	NA
+AB6217	SB309	CD4_Co-culture_48h_DC	CD4_Co-culture_48h_DC_1	in vitro	20181211	OVA + LPS	Cd11c+			48h	NA	NA	NA	NA	NA
+AB6218	SB309	CD4_Co-culture_48_T	CD4_Co-culture_48_T_1	in vitro	20181211	OVA + LPS	Trbc+			48h	NA	NA	NA	NA	NA
+AB6219	SB309	CD4_Co-culture_48h_T	CD4_Co-culture_48h_T_2	in vitro	20181211	OVA + LPS	Trbc+			48h	NA	NA	NA	NA	NA
+AB6220	SB309	mono-culture_48h_T	mono-culture_48h_T_1	in vitro	20181211	OVA + LPS T only	Trbc+			48h	NA	NA	NA	NA	NA
+AB6221	SB309	mono-culture_48h_T	mono-culture_48h_T_2	in vitro	20181211	OVA + LPS T only	Trbc+			48h	NA	NA	NA	NA	NA
+AB6222	SB309	mono-culture_48h_DC	mono-culture_48h_DC_1	in vitro	20181211	OVA + LPS DC only	Cd11c+			48h	NA	NA	NA	NA	NA
+AB6223	SB309	mono-culture_48h_DC	mono-culture_48h_DC_2	in vitro	20181211	OVA + LPS DC only	Cd11c+			48h	NA	NA	NA	NA	NA
+AB6345	SB314	Nb_inj_PIC	Nb3_inj_PIC_1	LN	20190108	helminths	doublets			48h	1	NA	NA	NA	NA
+AB6346	SB314	Nb_inj_PIC	Nb3_inj_PIC_2	LN	20190108	helminths	doublets			48h	1	NA	NA	NA	NA
+AB6347	SB314	Nb_inj_DC	Nb3_inj_DC_1	LN	20190108	helminths	Cd11c+			48h	1	NA	NA	NA	NA
+AB6348	SB314	Nb_inj_DC	Nb3_inj_DC_2	LN	20190108	helminths	Cd11c+			48h	1	NA	NA	NA	NA
+AB6349	SB314	Nb_inj_Tcells	Nb3_inj_Tcells_1	LN	20190108	helminths	Trbc+			48h	1	NA	NA	NA	NA
+AB6350	SB314	Nb_inj_Tcells	Nb3_inj_Tcells_2	LN	20190108	helminths	Trbc+			48h	1	NA	NA	NA	NA
+AB6351	SB314	PBS_inj_PIC	PBS3_inj_PIC_1	LN	20190108	PBS	doublets			48h	1	NA	NA	NA	NA
+AB6352	SB314	PBS_inj_PIC	PBS3_inj_PIC_2	LN	20190108	PBS	doublets			48h	1	NA	NA	NA	NA
+AB6353	SB314	PBS_inj_DC	PBS3_inj_DC_1	LN	20190108	PBS	Trbc+			48h	1	NA	NA	NA	NA
+AB6354	SB314	PBS_inj_DC	PBS3_inj_DC_2	LN	20190108	PBS	Cd11c+			48h	1	NA	NA	NA	NA
+AB6355	SB314	PBS_inj_Tcells	PBS3_inj_Tcells_1	LN	20190108	PBS	Cd11c+			48h	1	NA	NA	NA	NA
+AB6356	SB314	Nb_inj_PIC	Nb2_inj_PIC	LN	20190108	helminths	doublets			48h	2	NA	NA	NA	NA
+AB6357	SB314	Nb_inj_DC	Nb2_inj_DC	LN	20190108	helminths	Cd11c+			48h	2	NA	NA	NA	NA
+AB6358	SB314	Nb_inj_Tcells	Nb2_inj_Tcells	LN	20190108	helminths	Trbc+			48h	2	NA	NA	NA	NA
+AB6359	SB314	PBS_inj_Tcells_until_K	PBS2_inj_Tcells_until_K	LN	20190108	PBS	Trbc+			48h	2	NA	NA	NA	NA
+AB6360	SB314	PBS_inj_PIC	PBS2_inj_PIC	LN	20190108	PBS	doublets			48h	2	NA	NA	NA	NA
+AB6409	SB319	Nb_inj_Tcells_Tigit	Nb_inj_Tcells_Tigit_1	LN	20190207	helminths	Tigit+ Trbc+			48h	3	NA	NA	NA	NA
+AB6411	SB319	Nb_inj_Tcells_Tigit	Nb_inj_Tcells_Tigit_2	LN	20190207	helminths	Tigit+ Trbc+			48h	3	NA	NA	NA	NA
+AB6412	SB319	Nb_inj_DC	Nb_inj_DC_1	LN	20190207	helminths	Cd11c+			48h	3	NA	NA	NA	NA
+AB6413	SB319	Nb_inj_DC	Nb_inj_DC_2	LN	20190207	helminths	Cd11c+			48h	3	NA	NA	NA	NA
+AB6419	SB319	Nb_inj_Tcells_CD160	Nb_inj_Tcells_CD160_1	LN	20190207	helminths	CD160+ Trbc+			48h	3	NA	NA	NA	NA
+AB6420	SB319	Nb_inj_Tcells_CD160	Nb_inj_Tcells_CD160_2	LN	20190207	helminths	CD160+ Trbc+			48h	3	NA	NA	NA	NA
+AB6421	SB319	Nb_inj_Tcells_ICOS	Nb_inj_Tcells_ICOS_1	LN	20190207	helminths	Icos+ Trbc+			48h	3	NA	NA	NA	NA
+AB6422	SB319	Nb_inj_Tcells_ICOS	Nb_inj_Tcells_ICOS_2	LN	20190207	helminths	Icos+ Trbc+			48h	3	NA	NA	NA	NA
+AB6423	SB319	Nb_inj_Tcells	Nb_inj_Tcells	LN	20190207	helminths	Trbc+			48h	3	NA	NA	NA	NA
+AB6502	SB322	PBS_PIC	PBS_PIC_1	LN	20190308	PBS	doublets			48h	4	NA	NA	NA	NA
+AB6503	SB322	PBS_PIC	PBS_PIC_2	LN	20190308	PBS	doublets			48h	4	NA	NA	NA	NA
+AB6504	SB322	PBS_PIC	PBS_PIC_3	LN	20190308	PBS	doublets			48h	4	NA	NA	NA	NA
+AB6505	SB322	PBS_CD11C	PBS_CD11C_1	LN	20190308	PBS	Cd11c+			48h	4	NA	NA	NA	NA
+AB6506	SB322	PBS_CD11C	PBS_CD11C_2	LN	20190308	PBS	Cd11c+			48h	4	NA	NA	NA	NA
+AB6507	SB322	PBS_TCRb	PBS_TCRb_1	LN	20190308	PBS	Trbc+			48h	4	NA	NA	NA	NA
+AB6508	SB322	PBS_TCRb	PBS_TCRb_2	LN	20190308	PBS	Trbc+			48h	4	NA	NA	NA	NA
+AB6509	SB322	Nb_PIC_Ag	Nb_PIC_Ag	LN	20190308	helminths	Ag+ doublets			48h	4	NA	NA	NA	NA
+AB6510	SB322	Nb_CD11C_Ag	Nb_CD11C_Ag_1	LN	20190308	helminths	Ag+ Cd11c+			48h	4	NA	NA	NA	NA
+AB6511	SB322	Nb_CD11C_Ag	Nb_CD11C_Ag_2	LN	20190308	helminths	Ag+ Cd11c+			48h	4	NA	NA	NA	NA
+AB6512	SB322	Nb_PIC	Nb_PIC_1	LN	20190308	helminths	doublets			48h	4	NA	NA	NA	NA
+AB6513	SB322	Nb_PIC	Nb_PIC_2	LN	20190308	helminths	doublets			48h	4	NA	NA	NA	NA
+AB6514	SB322	Nb_CD11C	Nb_CD11C_1	LN	20190308	helminths	Cd11c+			48h	4	NA	NA	NA	NA
+AB6515	SB322	Nb_CD11C	Nb_CD11C_2	LN	20190308	helminths	Cd11c+			48h	4	NA	NA	NA	NA
+AB6516	SB322	Nb_TCRb	Nb_TCRb_1	LN	20190308	helminths	Trbc+			48h	4	NA	NA	NA	NA
+AB6517	SB322	Nb_TCRb	Nb_TCRb_2	LN	20190308	helminths	Trbc+			48h	4	NA	NA	NA	NA
+AB6566	SB323	Nb_PIC_Ag_48h_pool1	Nb_PIC_Ag_48h_pool1	LN	20190326	helminths	Ag+ doublets			48h	7	NA	NA	NA	NA
+AB6567	SB323	Nb_PIC_48h_pool1	Nb_PIC_48h_pool1	LN	20190326	helminths	doublets			48h	7	NA	NA	NA	NA
+AB6568	SB323	Nb_PIC_Ag_48h_pool2	Nb_PIC_Ag_48h_pool2	LN	20190326	helminths	Ag+ doublets			48h	8	NA	NA	NA	NA
+AB6569	SB323	Nb_PIC_48h_pool2	Nb_PIC_48h_pool2	LN	20190326	helminths	doublets			48h	8	NA	NA	NA	NA
+AB6570	SB323	Nb_TCRb_CD160_48h_pool1	Nb_TCRb_CD160_48h_pool1	LN	20190326	helminths	CD160+ Trbc+			48h	7	NA	NA	NA	NA
+AB6601	SB324	Nb_PIC_Ag_48h_pool2_A-G	Nb_PIC_Ag_48h_pool2_A-G	LN	20190326	helminths	Ag+ doublets			48h	8	NA	NA	NA	NA

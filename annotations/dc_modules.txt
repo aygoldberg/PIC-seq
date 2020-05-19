@@ -1,0 +1,61 @@
+	annotation	umicount
+Cxcl16	LPS response	12574
+Cstb	LPS response	8958
+Lgals3	LPS response	8814
+Csf2rb	LPS response	7958
+Rnh1	LPS response	3866
+Csf2rb2	LPS response	3609
+Irf7	Type I IFN	2254
+Ifitm3	Type I IFN	1439
+Ifitm2	Type I IFN	1115
+Slfn5	Type I IFN	851
+Ifi204	Type I IFN	699
+Mndal	Type I IFN	675
+Ifi205	Type I IFN	635
+Ifi211	Type I IFN	624
+Isg20	Type I IFN	386
+Tspan2	Type I IFN	64
+Isg15	Type I IFN	6768
+Ifit1	Type I IFN	2054
+Ifih1	Type I IFN	1655
+Rsad2	Type I IFN	1178
+Rtp4	Type I IFN	1108
+Phf11d	Type I IFN	315
+Ifit2	Type I IFN	287
+Ifit3	Type I IFN	272
+Ifi203	Type I IFN	212
+Cmpk2	Type I IFN	166
+Ifit1bl1	Type I IFN	71
+Ifit3b	Type I IFN	70
+Cst3	Irf8 program	71140
+Ccl22	Irf8 program	41582
+Txn1	Irf8 program	26477
+Crip1	Irf8 program	23654
+Vim	Irf8 program	16762
+Tspo	Irf8 program	10321
+Txndc17	Irf8 program	8409
+Irf8	Irf8 program	5525
+Pla2g16	Irf8 program	5521
+Glipr2	Irf8 program	3893
+Bcl2l14	Irf8 program	3841
+Cd81	Irf8 program	3634
+Serpinb9b	Irf8 program	3527
+Itm2c	Irf8 program	3071
+Rgs10	Irf8 program	2439
+Net1	Irf8 program	2331
+Arhgap31	Irf8 program	1677
+Fgfbp3	Irf8 program	1542
+Serpinb1a	Irf8 program	1526
+Tmbim4	Irf8 program	1434
+Mt1	Irf8 program	998
+Pdlim4	Irf8 program	515
+Srgn	Costimulatory program	35644
+Anxa2	Costimulatory program	25527
+Tagln2	Costimulatory program	21767
+Cd40	Costimulatory program	8834
+Lad1	Costimulatory program	7865
+Ccnd2	Costimulatory program	7339
+Bcl2l1	Costimulatory program	2909
+Ebi3	Costimulatory program	2221
+Cd70	Costimulatory program	1806
+Dll4	Costimulatory program	1754
