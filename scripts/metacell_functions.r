@@ -5,8 +5,8 @@ require("plyr")
 require("plotrix")
 require("gplots")
 require("parallel")
-library("compositions")
-
+require("compositions")
+require(RCurl)
 
 vecsplit = function(strvec, del, i) {
 	 unlist(lapply(sapply(strvec, strsplit, del), "[[", i))
@@ -389,11 +389,32 @@ explore_gene_set = function(mc_id, mat_id, cells, ct, outdir, prefix, comb,
 	colnames(modules_c)
 }
 
-import_metacell_structure = function(id, folder=id, all_id="all", bad_genes = c()) {
-	sin_tab = read.delim(paste0(folder, "/mc.txt"), stringsAsFactor=F)
-	sin_mc = sin_tab[,2]; names(sin_mc) = sin_tab[,1]
 
-	db_tab = read.delim(paste0(folder, "/db_mc.txt"), stringsAsFactor=F)
+import_metacell_structure = function(id, folder=id, all_id="all", bad_genes = c(), url=NULL) {
+
+	if (is.null(url)) {
+		sin_tab = read.delim(paste0(folder, "/mc.txt"), stringsAsFactor=F)
+		db_tab = read.delim(paste0(folder, "/db_mc.txt"), stringsAsFactor=F)
+		col_tab = read.delim(paste0(folder, "/colors.txt"), stringsAsFactor=F)
+		color_key = read.delim(paste0(folder, "/color_key.txt"), stringsAsFactor=F)
+		mc2d_mc = read.delim(paste0(folder, "/mc2d_mc.txt"), stringsAsFactor=F, row.names=1)
+		mc2d_sc	= read.delim(paste0(folder, "/mc2d_sc.txt"), stringsAsFactor=F, row.names=1)
+		mc2d_graph = read.delim(paste0(folder, "/mc2d_graph.txt"), stringsAsFactor=F)
+		cgraph = read.delim(paste0(folder, "/cgraph.txt"), stringsAsFactor=F)
+		gset_tab = read.delim(paste0(folder, "/gset.txt"), stringsAsFactor=F)
+	} else {
+		sin_tab = read.delim(text = getURL(paste0(url, "/mc.txt")), stringsAsFactor=F)
+		db_tab = read.delim(text = getURL(paste0(url, "/db_mc.txt")), stringsAsFactor=F)
+		col_tab = read.delim(text = getURL(paste0(url, "/colors.txt")), stringsAsFactor=F)
+		color_key = read.delim(text = getURL(paste0(url, "/color_key.txt")), stringsAsFactor=F)
+		mc2d_mc = read.delim(text = getURL(paste0(url, "/mc2d_mc.txt")), stringsAsFactor=F)
+		mc2d_sc = read.delim(text = getURL(paste0(url, "/mc2d_sc.txt")), stringsAsFactor=F)
+		mc2d_graph = read.delim(text = getURL(paste0(url, "/mc2d_graph.txt")), stringsAsFactor=F)
+		cgraph = read.delim(text = getURL(paste0(url, "/cgraph.txt")), stringsAsFactor=F)
+		gset_tab = read.delim(text = getURL(paste0(url, "/gset.txt")), stringsAsFactor=F)
+	}
+
+	sin_mc = sin_tab[,2]; names(sin_mc) = sin_tab[,1]
 	db_mc = db_tab[,2]; names(db_mc) = db_tab[,1]
 
 	all_mat = scdb_mat(all_id)
@@ -411,10 +432,8 @@ import_metacell_structure = function(id, folder=id, all_id="all", bad_genes = c(
 	sin_mat = scdb_mat(id_s)
 	sin_cl = tgMCCov(sin_mc, setdiff(sin_mat@cells, names(sin_mc)), sin_mat)
 	colors = rep(NA, ncol(sin_cl@mc_fp))
-	col_tab = read.delim(paste0(folder, "/colors.txt"), stringsAsFactor=F)
 	col_vec = col_tab[,2]; names(col_vec) = col_tab[,1]
 	colors[as.numeric(names(col_vec))] = col_vec
-	color_key = read.delim(paste0(folder, "/color_key.txt"), stringsAsFactor=F)
 	sin_cl@colors = colors
 	sin_cl@color_key = rbind(sin_cl@color_key, color_key)
 	scdb_add_mc(id_s, sin_cl)
@@ -423,21 +442,16 @@ import_metacell_structure = function(id, folder=id, all_id="all", bad_genes = c(
         db_cl = tgMCCov(db_mc, setdiff(db_mat@cells, names(db_mc)), db_mat)
         scdb_add_mc(id_d, db_cl)
 
-	mc2d_mc = read.delim(paste0(folder, "/mc2d_mc.txt"), stringsAsFactor=F, row.names=1)
 	mc_x = mc2d_mc$x; names(mc_x) = rownames(mc2d_mc)
 	mc_y = mc2d_mc$y; names(mc_y) = rownames(mc2d_mc)
-	mc2d_sc	= read.delim(paste0(folder, "/mc2d_sc.txt"), stringsAsFactor=F, row.names=1)
 	sc_x = mc2d_sc$x; names(sc_x) = rownames(mc2d_sc)
 	sc_y = mc2d_sc$y; names(sc_y) = rownames(mc2d_sc)
-	mc2d_graph = read.delim(paste0(folder, "/mc2d_graph.txt"), stringsAsFactor=F)
 	sin_2d = tgMC2D(mc_id=id_s, mc_x=mc_x, mc_y=mc_y, sc_x=sc_x, sc_y=sc_y, graph=mc2d_graph)
 	scdb_add_mc2d(id_s, sin_2d)
 	
-	cgraph = read.delim(paste0(folder, "/cgraph.txt"), stringsAsFactor=F)
 	sin_cgraph = tgCellGraph(cgraph, sin_mat@cells)
 	scdb_add_cgraph(id_s, sin_cgraph)
 
-	gset_tab = read.delim(paste0(folder, "/gset.txt"), stringsAsFactor=F)
 	gset = gset_tab[,2]; names(gset) = gset_tab[,1]
 	sc_gset = tgGeneSets(gset)
 	scdb_add_gset(id, sc_gset)
