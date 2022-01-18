@@ -416,7 +416,8 @@ simulate_doublets = function(mat_id, a_cells, b_cells, k, comb = NULL, numis = I
 
 	cells = union(a_cells, b_cells)
 	sc_mat = scdb_mat(mat_id)
-	umis = as.matrix(sc_mat@mat[,cells])
+	#umis = as.matrix(sc_mat@mat[,cells])
+	umis = read_large_umis(mat_id, cells = cells)
 	if (is.null(comb)) { 
 		comb = rep(1, length(cells)); names(comb) = cells
 	}
@@ -526,7 +527,8 @@ assign_pics_to_singlets = function(mc_id, mat_id, pic_umis, a_cells, b_cells, al
 	reg = 1e-6, verbose = T, likelihoods_fn = NULL, bad_genes = bad_genes, markers = NULL) {
 
 	sc_cl = scdb_mc(mc_id); sc_mat = scdb_mat(mat_id)
-	umis = as.matrix(sc_mat@mat[,names(sc_cl@mc)])
+#	umis = as.matrix(sc_mat@mat[,names(sc_cl@mc)])
+	umis = read_large_umis(mat_id, cells = names(sc_cl@mc))
         if (is.null(markers)) {
                 mc_prof = sc_cl@e_gc[setdiff(rownames(sc_cl@e_gc), bad_genes),]
 	} else {
@@ -586,7 +588,8 @@ assign_pics_to_singlets = function(mc_id, mat_id, pic_umis, a_cells, b_cells, al
         reg = 1e-6, verbose = T, likelihoods_fn = NULL, bad_genes = c(), confu_thresh = Inf, exclusion_matrix = NULL, markers = NULL) {
 
 	sc_cl = scdb_mc(mc_id); sc_mat = scdb_mat(mat_id)
-	umis = as.matrix(sc_mat@mat[,names(sc_cl@mc)])
+#	umis = as.matrix(sc_mat@mat[,names(sc_cl@mc)])
+	umis = read_large_umis(mat_id, cells = names(sc_cl@mc))
 	if (is.null(markers)) {
 	        mc_prof = sc_cl@e_gc[setdiff(rownames(sc_cl@e_gc), bad_genes),]	
 	} else {

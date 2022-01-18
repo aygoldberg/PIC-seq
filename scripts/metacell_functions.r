@@ -8,6 +8,19 @@ require("parallel")
 require("compositions")
 require(RCurl)
 
+read_large_umis = function(mat_id, bs = 1e4, cells = NULL) {
+        mat = scdb_mat(mat_id)
+        if (is.null(cells)) { cells = mat@cells}
+        ncells = length(cells)
+        umis = NULL
+        for (i in seq_len(ncells %/% bs + 1)) {
+                from = (i - 1) * bs + 1
+                to = min(i * bs, ncells)
+                umis = cbind(umis, as.matrix(mat@mat[,cells[from:to]]))
+        }
+        umis
+}
+
 vecsplit = function(strvec, del, i) {
 	 unlist(lapply(sapply(strvec, strsplit, del), "[[", i))
 }
@@ -88,7 +101,8 @@ sc_to_bulk = function(mc_id, mat_id, comb=NULL, bad_genes = c(), cells = names(c
 
 	if (is.null(comb)) { cells = union(g1,g2)}	
         sc_cl = scdb_mc(mc_id); sc_mat = scdb_mat(mat_id)
-	umis = as.matrix(sc_mat@mat[,cells])
+#	umis = as.matrix(sc_mat@mat[,cells])
+        umis = read_large_umis(mat_id, cells = cells)
 	umis_n = sweep(umis,2,colSums(umis),"/") * 1000
 	
 	if (!normalize) { umis_n = umis}
@@ -166,7 +180,8 @@ plot_sc_heatmap = function(mc_id, mat_id, nms, clusts = NULL, good_clusts = NULL
 	if (is.null(clusts)) {
 		clusts = sc_cl@mc
 	}
-	umis = as.matrix(sc_mat@mat[,cells])
+#	umis = as.matrix(sc_mat@mat[,cells])
+	umis = read_large_umis(mat_id, cells = cells)
 	umis_n = sweep(umis,2,colSums(umis),"/") * 1000
 	if (normalize) {
 		foc = log(1 + 7 * umis_n)
@@ -198,7 +213,8 @@ plot_sc_heatmap = function(mc_id, mat_id, nms, clusts = NULL, good_clusts = NULL
 
 scr_write_models_file = function(mc_id, mat_id, filename = "models.txt") {
 	sc_cl = scdb_mc(mc_id); sc_mat = scdb_mat(mat_id)	
-	umis = as.matrix(sc_mat@mat[, names(sc_cl@mc)])
+#	umis = as.matrix(sc_mat@mat[, names(sc_cl@mc)])
+	umis = read_large_umis(mat_id, cells = cells)
         genes = rownames(sc_cl@mc_fp)
         write.table(data.frame(log2(sc_cl@mc_fp), umicount = rowSums(umis[genes,])), col.names = NA, quote = F, sep = "\t", file = filename)
 }
@@ -325,7 +341,8 @@ explore_gene_set = function(mc_id, mat_id, cells, ct, outdir, prefix, comb,
 
         dir.create(outdir)
 	sc_cl = scdb_mc(mc_id); sc_mat = scdb_mat(mat_id)
-	umis = as.matrix(sc_mat@mat[,cells])
+#	umis = as.matrix(sc_mat@mat[,cells])
+	umis = read_large_umis(mat_id, cells = cells)
 	nms = names(ct)
 	mat_ds = as.matrix(scm_downsamp(umis, downsamp_n))
 
